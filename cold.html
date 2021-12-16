@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Drinks Menu</title>
+    <link rel="icon" href="./img/onlysmilebg.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- library animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <style>       
+        .container-sm{               
+            width: 40%;                           
+            padding-top: 8%;
+            margin-top:-8%;             
+        }                  
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm sticky-top">
+        <a class="navbar-brand d-block d-sm-none" href="homes.html">
+            <div class='d-flex align-items-center'>
+                <img class="img-fluid" src="img/logo.png" alt="Logo" style="width: 100%; height: 100%;">
+            </div>
+        </a>
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id='navbarNav'>
+            <ul class="navbar-nav">
+                <li class="nav-item m-auto">
+                    <a class="nav-link navi" href="homes.html">Home</a>
+                </li>
+                <li class="nav-item m-auto">
+                    <a class="nav-link navi navactive" href="menu.html">Speciality</a>
+                </li>
+                <li class="nav-item navbar-brand m-auto d-none d-sm-block">
+                    <a href="homes.html">
+                        <img class="img-fluid" src="img/logo.png" alt="Logo" style="width: 100%; height: 100%;">
+                    </a>
+                </li>
+                <li class="nav-item m-auto">
+                    <a class="nav-link navi" href="order.html">Order</a>
+                </li>
+                <li class="nav-item m-auto">
+                    <a class="nav-link navi" href="about.html">About</a>
+                </li>
+            </ul>  
+        </div>       
+    </nav>
+    <div class="mainmenu mx-auto">
+        <img class="img-fluid mx-auto" src="img/cold_coffee.svg" alt="" width="90%" style="z-index:-100;position:fixed;left:5%; top:-7vw">
+        <h1 class="text-light text-center" style="font-size:10vw;">Coffee Drinks</h1>
+    </div>    
+    <div class="container-fluid pb-1" style="background-color:white">   
+        <h1 class="navi py-2 mx-auto" style="width:90%;">Our Coffee Based Drinks</h1>
+        <table class="navi menu table mx-auto mb-0" style="width: 90%;">
+            <tbody>
+                <tr scope="row" class="font-weight-bold ">
+                    <td class="pl-5"> <button class="menubt text-left" onclick="openMenu(1)">Espresso</button></td>
+                    <td class="pr-5" style="text-align:right;">15k</td>
+                </tr>
+                <tr scope="row" class="font-weight-bold">
+                    <td class="pl-5"> <button class="menubt text-left" onclick="openMenu(2)">Americano</button></td>
+                    <td class="pr-5" style="text-align:right;">20k</td>
+                </tr>
+                <tr scope="row" class="font-weight-bold">
+                    <td class="pl-5"> <button class="menubt text-left" onclick="openMenu(3)">Affogato</button></td>
+                    <td class="pr-5" style="text-align:right;">23k</td>
+                </tr>
+                <tr scope="row" class="font-weight-bold">
+                    <td class="pl-5"> <button class="menubt text-left" onclick="openMenu(4)">Cappucino</button></td>
+                    <td class="pr-5" style="text-align:right;">25k</td>
+                </tr>
+                <tr scope="row" class="font-weight-bold">
+                    <td class="pl-5"> <button class="menubt text-left" onclick="openMenu(5)">Cafe Mocha</button></td>
+                    <td class="pr-5" style="text-align:right;">25k</td>
+                </tr>                
+                <tr scope="row" class="font-weight-bold">
+                    <td class="pl-5"> <button class="menubt text-left" onclick="openMenu(6)">Cafe Latte</button></td>
+                    <td class="pr-5" style="text-align:right;">22k</td>
+                </tr>
+                <tr scope="row" class="font-weight-bold">
+                    <td class="pl-5"> <button class="menubt text-left" onclick="openMenu(11)">Aren Latte</button></td>
+                    <td class="pr-5" style="text-align:right;">25k</td>
+                </tr>
+                <tr scope="row" class="font-weight-bold">
+                    <td class="pl-5"> <button class="menubt text-left" onclick="openMenu(8)">Strawberry Latte</button></td>
+                    <td class="pr-5" style="text-align:right;">25k</td>
+                </tr>
+                <tr scope="row" class="font-weight-bold">
+                    <td class="pl-5"> <button class="menubt text-left" onclick="openMenu(9)">Tiramisu Latte</button></td>
+                    <td class="pr-5" style="text-align:right;">25k</td>
+                </tr>
+                <tr scope="row" class="font-weight-bold">
+                    <td class="pl-5"> <button class="menubt text-left" onclick="openMenu(7)">Vanilla Latte</button></td>
+                    <td class="pr-5" style="text-align:right;">23k</td>
+                </tr>                
+                <tr scope="row" class="font-weight-bold">
+                    <td class="pl-5"> <button class="text-left menubt" onclick="openMenu(10)">Caramel Macchiato</button></td>
+                    <td class="pr-5" style="text-align:right;">25k</td>
+                </tr>
+                <tr scope="row" class="font-weight-bold">
+                    <td class="pl-5"> <button class="menubt text-left" onclick="openMenu(12)">Cold Brew</button></td>
+                    <td class="pr-5" style="text-align:right;">18k</td>
+                </tr>
+                <tr scope="row" class="font-weight-bold">
+                    <td class="pl-5"> <button class="menubt text-left" onclick="openMenu(13)">Cold White</button></td>
+                    <td class="pr-5" style="text-align:right;">23k</td>
+                </tr>
+                <tr scope="row" class="font-weight-bold">
+                    <td class="pl-5"> <button class="menubt text-left" onclick="openMenu(14)">Cold Brew Cocoa Latte</button></td>
+                    <td class="pr-5" style="text-align:right;">23k</td>
+                </tr>
+                <tr scope="row" class="font-weight-bold">
+                    <td class="pl-5"> <button class="menubt text-left" onclick="openMenu(15)">Cold Brew Soy Latte</button></td>
+                    <td class="pr-5" style="text-align:right;">25k</td>
+                </tr>
+                <tr scope="row" class="font-weight-bold">
+                    <td class="pl-5"> <button class="menubt text-left" onclick="openMenu(16)">Dalgona Coffee</button></td>
+                    <td class="pr-5" style="text-align:right;">23k</td>
+                </tr>
+                <tr scope="row" class="font-weight-bold">
+                    <td class="pl-5"> <button class="menubt text-left" onclick="openMenu(17)">The Coffee Beer</button></td>
+                    <td class="pr-5" style="text-align:right;">22k</td>
+                </tr>                                                           
+            </tbody>            
+        </table>
+        <p class="navi font-weight-bold font-size-sm text-center mx-auto" style="width:90%">Some of menu shown are available in hot and cold drinks. Ask your barista for more informations.</p>
+        <p class="navi font-italic font-weight-bold font-size-sm text-center">All Price Are in Rupiah's and Has Included VAT.</p>
+        <div class="container-fluid pb-5 updt">
+            <hr>
+            <div class="container-fluid m-0 d-flex flex-column justify-content-center align-items-center">
+                <h3 class="navi text-center mb-3">Get Updates</h3>   
+                <p class="text-center artc">
+                    Do you want to stay informed about <strong>Codeplay</strong>? Subscribe to our newsletter!
+                </p>   
+                <input class="inp artc" type="text" placeholder="Leave us your email">
+                <br>                    
+                <button class="btn">Send</button>
+                <p class="my-3 artc"><strong>- or -</strong></p>  
+                <p class=" text-center artc">Download <strong>Codeplay</strong> mobile app for order and more promo's</p>
+                <button class="btn" onclick="openord()">Download </button>    
+            </div>                                             
+        </div>
+    </div>    
+    <div id="pop">
+        <div class='d-flex align-items-center justify-content-center mh-100 h-100'>
+            <div class='menuinfo m-auto bg-light rounded d-flex flex-column align-items-center p-3'>
+                <img class=" d-block img-thumbnail menuimg border border-dark" data-aos="zoom-in" src="img/milk_coff2.jpg" alt="">        
+                <div>
+                    <h3 class="judul text-center"></h3>
+                    <p class="artc text-center" data-aos="fade-down"></p>
+                </div>
+                <button type="button" class="btn navi" onclick="closeForm()">Back</button>
+            </div>
+        </div>
+    </div>        
+    <!-- footer -->
+    <div class="container-fluid m-0 row pt-4" style="background-color:black; font-size:1.1em">
+        <div class="text-light navi col-md-4">            
+            <p class="navi text-light text-center">
+                <a class="text-light" href="https://maps.google.com/?q=jl.ngagel jaya tengah no.73-77" style="text-decoration:none;">
+                Jl. Ngagel Jaya Tengah No.73-77,<br>
+                Baratajaya, Kec. Gubeng,<br>
+                Kota SBY, Jawa Timur 60284
+                </a>
+            </p>
+        </div>
+        <div class="text-light navi col-md-4">
+            <p class="navi text-light text-center">
+                <a class="text-light" href=""  style="text-decoration:none;">Facebook</a><br>
+                <a class="text-light" href=""  style="text-decoration:none;">Instagram</a><br>
+                <a class="text-light" href=""  style="text-decoration:none;">Youtube</a>
+            </p>    
+        </div>
+        <div class="text-light navi col-md-4">
+            <p class="navi text-light text-center" style="text-decoration:none;">
+                <a class="text-light" href=""  style="text-decoration:none;">+628123-456-789</a><br>
+                <a class="text-light" href=""  style="text-decoration:none;">codeplay.cafe@cplay.com</a>                
+            </p>
+        </div>
+    </div> 
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  console.log("ready");
+});
+$("#pop").click(() => {
+    closeForm()
+})
+function openMenu(i){
+    $(".navbar").hide();
+    $("#pop").show();    
+    if (i==1){
+        $("#pop img").attr("src","img/menu/espresso.png");
+        $("#pop h3").text("Espresso");
+        $("#pop p").text("a shot of espresso in 40ml size, don't be overwhelmed with the strong taste from this tiny man!");
+    }
+    else if (i==2){
+        $("#pop img").attr("src","img/menu/americc.png");
+        $("#pop h3").text("Americano");
+        $("#pop p").text("a shot of espresso added with pure water, making you more productive without worrying the overwhelmed strong taste of espresso");
+    }  
+    else if (i==3){
+        $("#pop img").attr("src","img/menu/affogato.png");
+        $("#pop h3").text("Affogato");
+        $("#pop p").text("a shot of espresso and vanilla ice cream, made for the one who's going on gloomy vibes but still wanna be productive. Just Poured the espresso on top of the ice cream for a gloomy away!");
+    }
+    else if (i==4){
+        $("#pop img").attr("src","img/menu/cappucino.png");
+        $("#pop h3").text("Cappucino");
+        $("#pop p").text("Milk frother on the top of espresso!");
+    }  
+    else if (i==5){
+        $("#pop img").attr("src","img/menu/cafemocha.png");
+        $("#pop h3").text("Cafe Mocha");
+        $("#pop p").text("Chocolate milk frother on the top of espresso, bitter and sweet!");
+    }   
+    else if (i==6){
+        $("#pop img").attr("src","img/menu/cafelatte.png");
+        $("#pop h3").text("Cafe Latte");
+        $("#pop p").text("A bunch of creamy milk topped with espresso on ratio 2:1 of milk and espresso.");
+    }
+    else if (i==7){
+        $("#pop img").attr("src","img/menu/vanillalatte.png");
+        $("#pop h3").text("Vanilla Latte");
+        $("#pop p").text("Latte with vanilla flavourings. Remind you of good memories.");
+    }
+    else if (i==8){
+        $("#pop img").attr("src","img/menu/strawberrylatte.png");
+        $("#pop h3").text("Strawberry Latte");
+        $("#pop p").text("Latte with strawberry smoothies. Not artificial flavourings, all natural!");
+    }
+    else if (i==9){
+        $("#pop img").attr("src","img/menu/tiramisulatte.png");
+        $("#pop h3").text("Tiramisu Latte");
+        $("#pop p").text("Latte with tiramisu cake essence, no one can beat this taste.");
+    }
+    else if (i==10){
+        $("#pop img").attr("src","img/menu/caramelmachiato.png");
+        $("#pop h3").text("Caramel Machiato");
+        $("#pop p").text("Latte with strawberry flavourings. Remind you of sweet memories.");
+    }
+    else if (i==11){
+        $("#pop img").attr("src","img/menu/arenlatte.png");
+        $("#pop h3").text("Aren Latte");
+        $("#pop p").text("Made from authentic aren with latte, creamy and soft taste you never experienced before!");
+    }
+    else if (i==12){
+        $("#pop img").attr("src","img/menu/coldbrew.png");
+        $("#pop h3").text("Cold Brew");
+        $("#pop p").text("Made from single origin bean, with 12 hours processed time. Strong taste yet it soft.");
+    }
+    else if (i==13){
+        $("#pop img").attr("src","img/menu/coldwhite.png");
+        $("#pop h3").text("Cold White");
+        $("#pop p").text("Cold brew added with milk into a kind taste!");
+    }
+    else if (i==14){
+        $("#pop img").attr("src","img/menu/coldbrewcocoa.png");
+        $("#pop h3").text("Cold Brew Cocoa");
+        $("#pop p").text("Cold brew added with Chocolate milk.");
+    }
+    else if (i==15){
+        $("#pop img").attr("src","img/menu/soycoldbrew.png");
+        $("#pop h3").text("Cold Brew Soy Latte");
+        $("#pop p").text("High protein in one sip of cold brew,and feel its natural taste!");
+    }
+    else if (i==16){
+        $("#pop img").attr("src","img/menu/dalgona.png");
+        $("#pop h3").text("Dalgona Coffee");
+        $("#pop p").text("The infamous whipped coffee on top of fresh milk.");
+    }
+    else if (i==17){
+        $("#pop img").attr("src","img/menu/coffeebeer.png");
+        $("#pop h3").text("Coffee Beer");
+        $("#pop p").text("Chill out, it's only the name. It's 100% alcohol free to chill out your day!");
+    }
+    $("#pop img").attr("width","100%");
+}
+ 
+function closeForm() {
+   $(".navbar").show();
+   $("#pop").hide();
+}
+function openord(){
+    location.href="order.html";
+}
+AOS.init(); 
+</script>
+</html>
